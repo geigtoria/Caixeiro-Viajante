@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rota-dos-dragoes"
+version = "1.1.0"
+description = "Problema do Caixeiro Viajante com tema de dragões (Tkinter)"
+requires-python = ">=3.8"
+dependencies = ["pillow>=9.0"]
+
+[project.gui-scripts]
+rota-dos-dragoes = "rota_dos_dragoes.interface.app:executar"
+
+[tool.setuptools.packages.find]
+include = ["rota_dos_dragoes*"]
